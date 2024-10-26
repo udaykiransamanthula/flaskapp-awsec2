@@ -7,7 +7,7 @@ on:
       - 'Dockerfile' 
     branches:
       - main
-  workflow_dispatch:
+  #workflow_dispatch:
 
 env:
   AWS_REGION: "ap-south-1"
