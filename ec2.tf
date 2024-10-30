@@ -13,6 +13,7 @@ resource "aws_instance" "private" {
   user_data = <<-EOF
               #!/bin/bash
               yum update -y
+              yum install -y zip
               yum install -y docker
               systemctl enable docker
               systemctl start docker
